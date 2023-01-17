@@ -41,9 +41,9 @@ const seattle = {
 
     generateSalesReport: function () {
         for(let i = 0; i < 14; i++) {
-            this.salesReport.push([`${hours[i]}: ${this.cookiesPerHour[i]} Cookies`])
+            this.salesReport.push([/*${hours[i]}:*/`${this.cookiesPerHour[i]} Cookies`])
         };
-        this.salesReport.push(`Total: ${this.totalCookiesSold} Cookies`);
+        this.salesReport.push(`${this.totalCookiesSold} Cookies`);
     },
 }
 
@@ -81,9 +81,9 @@ const tokyo = {
 
     generateSalesReport: function () {
         for(let i = 0; i < 14; i++) {
-            this.salesReport.push([`${hours[i]}: ${this.cookiesPerHour[i]} Cookies`])
+            this.salesReport.push([`${this.cookiesPerHour[i]} Cookies`])
         };
-        this.salesReport.push(`Total: ${this.totalCookiesSold} Cookies`);
+        this.salesReport.push(`${this.totalCookiesSold} Cookies`);
     },
 }
 
@@ -121,9 +121,9 @@ const dubai = {
 
     generateSalesReport: function () {
         for(let i = 0; i < 14; i++) {
-            this.salesReport.push([`${hours[i]}: ${this.cookiesPerHour[i]} Cookies`])
+            this.salesReport.push([`${this.cookiesPerHour[i]} Cookies`])
         };
-        this.salesReport.push(`Total: ${this.totalCookiesSold} Cookies`);
+        this.salesReport.push(`${this.totalCookiesSold} Cookies`);
     },
 }
 
@@ -161,9 +161,9 @@ const paris = {
 
     generateSalesReport: function () {
         for(let i = 0; i < 14; i++) {
-            this.salesReport.push([`${hours[i]}: ${this.cookiesPerHour[i]} Cookies`])
+            this.salesReport.push([`${this.cookiesPerHour[i]} Cookies`])
         };
-        this.salesReport.push(`Total: ${this.totalCookiesSold} Cookies`);
+        this.salesReport.push(`${this.totalCookiesSold} Cookies`);
     },
 }
 
@@ -203,7 +203,7 @@ const lima = {
         for(let i = 0; i < 14; i++) {
             this.salesReport.push([`${hours[i]}: ${this.cookiesPerHour[i]} Cookies`])
         };
-        this.salesReport.push(`Total: ${this.totalCookiesSold} Cookies`);
+        this.salesReport.push(`${this.totalCookiesSold} Cookies`);
     },
 }
 
