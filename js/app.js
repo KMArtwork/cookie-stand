@@ -42,9 +42,9 @@ Store.prototype.calculateTotalCookiesSold = function () {
 
 Store.prototype.generateSalesReport = function () {
     for(let i = 0; i < 14; i++) {
-        this.salesReport.push([/*${hours[i]}:*/`${this.cookiesPerHour[i]} Cookies`])
+        this.salesReport.push(this.cookiesPerHour[i])
     };
-    this.salesReport.push(`${this.totalCookiesSold} Cookies`);
+    this.salesReport.push(this.totalCookiesSold);
 };
 
 let seattle = new Store('Seattle', 23, 65, 6.3);

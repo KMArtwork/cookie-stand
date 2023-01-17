@@ -25,9 +25,25 @@ function displaySalesTableData (targetElementId, arrayLocation) {
     for (let i = 0; i < 15; i++) {
         let data = document.createElement('td');
         data.innerHTML = locationSalesReports[arrayLocation][1][i];
-        console.log('Sales Report ' + data.innerHTML);
+        //console.log('Sales Report ' + data.innerHTML);
         target.appendChild(data);
     }
+}
+
+function displayHourlyTotals () {
+    let hourlyTotal = 0;
+    let data;
+    let target;
+    for (let i = 0; i < 15; i++) {
+        hourlyTotal = locationSalesReports[0][1][i] + locationSalesReports[1][1][i] +  locationSalesReports[2][1][i] + locationSalesReports[3][1][i] + locationSalesReports[4][1][i];
+        console.log(hourlyTotal);
+        data = document.createElement('td');
+        data.innerHTML = hourlyTotal;
+        target = document.getElementById('totals');
+        target.appendChild(data);
+    }
+    
+    
 }
 
 displaySalesTableData('seattle', 0);
@@ -35,3 +51,5 @@ displaySalesTableData('tokyo', 1);
 displaySalesTableData('dubai', 2);
 displaySalesTableData('paris', 3);
 displaySalesTableData('lima', 4);
+
+displayHourlyTotals();
