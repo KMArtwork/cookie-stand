@@ -1,0 +1,38 @@
+:root {
+    --salmon: #FAAA8D;
+    --off-white: #FEEFDD;
+    --dark-green: #313715;
+    --atomic-tangerine: #F49D6E;
+    --peach-puff: #F5D6BA;
+    --laurel-green: #ACC3A6;
+    --space-cadet: #2C2C54;
+    --amaranth-purple: #A40E4C;
+    background-color: var(--salmon);
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--space-cadet);
+}
+
+nav h1 {
+    color: var(--atomic-tangerine);
+}
+
+nav a {
+    color: var(--peach-puff);
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Russo One', sans-serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* need to create ruleset to specify font for sales data */

@@ -247,3 +247,12 @@ console.log(lima);
 
 compileSalesReports();
 console.log(locationSalesReports);
+
+function displaySalesData () {
+    let target = document.getElementById('seattle');
+    let information = document.createElement('p')
+    information.innerHTML = locationSalesReports[0];
+    target.appendChild(information);
+};
+
+displaySalesData();
