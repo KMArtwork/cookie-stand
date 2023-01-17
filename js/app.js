@@ -41,9 +41,9 @@ const seattle = {
 
     generateSalesReport: function () {
         for(let i = 0; i < 14; i++) {
-            this.salesReport.push([`${hours[i]}: ${this.cookiesPerHour[i]} cookies`])
+            this.salesReport.push([`${hours[i]}: ${this.cookiesPerHour[i]} Cookies`])
         };
-        this.salesReport.push(`Total: ${this.totalCookiesSold}`);
+        this.salesReport.push(`Total: ${this.totalCookiesSold} Cookies`);
     },
 }
 
@@ -81,9 +81,9 @@ const tokyo = {
 
     generateSalesReport: function () {
         for(let i = 0; i < 14; i++) {
-            this.salesReport.push([`${hours[i]}: ${this.cookiesPerHour[i]} cookies`])
+            this.salesReport.push([`${hours[i]}: ${this.cookiesPerHour[i]} Cookies`])
         };
-        this.salesReport.push(`Total: ${this.totalCookiesSold}`);
+        this.salesReport.push(`Total: ${this.totalCookiesSold} Cookies`);
     },
 }
 
@@ -121,9 +121,9 @@ const dubai = {
 
     generateSalesReport: function () {
         for(let i = 0; i < 14; i++) {
-            this.salesReport.push([`${hours[i]}: ${this.cookiesPerHour[i]} cookies`])
+            this.salesReport.push([`${hours[i]}: ${this.cookiesPerHour[i]} Cookies`])
         };
-        this.salesReport.push(`Total: ${this.totalCookiesSold}`);
+        this.salesReport.push(`Total: ${this.totalCookiesSold} Cookies`);
     },
 }
 
@@ -161,9 +161,9 @@ const paris = {
 
     generateSalesReport: function () {
         for(let i = 0; i < 14; i++) {
-            this.salesReport.push([`${hours[i]}: ${this.cookiesPerHour[i]} cookies`])
+            this.salesReport.push([`${hours[i]}: ${this.cookiesPerHour[i]} Cookies`])
         };
-        this.salesReport.push(`Total: ${this.totalCookiesSold}`);
+        this.salesReport.push(`Total: ${this.totalCookiesSold} Cookies`);
     },
 }
 
@@ -201,9 +201,9 @@ const lima = {
 
     generateSalesReport: function () {
         for(let i = 0; i < 14; i++) {
-            this.salesReport.push([`${hours[i]}: ${this.cookiesPerHour[i]} cookies`])
+            this.salesReport.push([`${hours[i]}: ${this.cookiesPerHour[i]} Cookies`])
         };
-        this.salesReport.push(`Total: ${this.totalCookiesSold}`);
+        this.salesReport.push(`Total: ${this.totalCookiesSold} Cookies`);
     },
 }
 
@@ -248,11 +248,5 @@ console.log(lima);
 compileSalesReports();
 console.log(locationSalesReports);
 
-function displaySalesData () {
-    let target = document.getElementById('seattle');
-    let information = document.createElement('p')
-    information.innerHTML = locationSalesReports[0];
-    target.appendChild(information);
-};
 
-displaySalesData();
+export { locationSalesReports };
