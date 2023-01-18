@@ -295,4 +295,4 @@ compileSalesReports();
 console.log(locationSalesReports);
 
 
-export { locationSalesReports };
+export { locationSalesReports, hours };

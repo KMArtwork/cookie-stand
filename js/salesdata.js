@@ -1,6 +1,6 @@
 'use strict';
 
-import { locationSalesReports } from "./app.js";
+import { locationSalesReports, hours } from "./app.js";
 
 // function displaySalesData (targetElement, arrayLocation) {
 //     let target = document.getElementById(targetElement);
@@ -19,6 +19,9 @@ import { locationSalesReports } from "./app.js";
 //     }
 // }
 
+
+
+// renders cookies sold per hour for a given store location
 function displaySalesTableData (targetElementId, arrayLocation) {
     let target = document.getElementById(targetElementId);
     
@@ -30,6 +33,8 @@ function displaySalesTableData (targetElementId, arrayLocation) {
     }
 }
 
+
+// renders total cookies sold per hour across all store locations & grand total for all stores combined
 function displayHourlyTotals () {
     let hourlyTotal = 0;
     let data;
@@ -42,9 +47,23 @@ function displayHourlyTotals () {
         target = document.getElementById('totals');
         target.appendChild(data);
     }
-    
-    
 }
+
+// creates and displays table header elements for store hours & daily location total cookies sold
+function createTableHeaders () {
+    let data;
+    let target;
+    for (let i = 0; i <= hours.length; i++) {
+        data = document.createElement('th');
+        data.innerHTML = hours[i];
+        target = document.getElementById('y-axis');
+        target.appendChild(data);
+    }
+    data.innerHTML = 'Daily Location Total';
+    target.appendChild(data);
+}
+
+createTableHeaders();
 
 displaySalesTableData('seattle', 0);
 displaySalesTableData('tokyo', 1);
