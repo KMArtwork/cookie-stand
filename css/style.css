@@ -1,3 +1,5 @@
+/* global style  */
+
 :root {
     --salmon: #FAAA8D;
     --off-white: #FEEFDD;
@@ -8,12 +10,56 @@
     --space-cadet: #2C2C54;
     --amaranth-purple: #A40E4C;
     background-color: var(--salmon);
-
 }
+
+html {
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 0.65
+}
+
+h6 {
+    font-size: 0.5rem;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Russo One', sans-serif;
+    color: var(--peach-puff)
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--dark-green);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--space-cadet)
+}
+
+/* nav bar style */
 
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem;
     background-color: var(--space-cadet);
 }
@@ -23,12 +69,99 @@ nav a {
     text-decoration: underline;
 }
 
-.flex {
+#logo-nav {
+    width: 10%;
+    height: 10%;
+    justify-self: center;
+}
+
+nav h1 {
+    width: 30%;
+}
+
+#navlinks {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+}
+
+/* main style  */
+
+
+#hero-bg {
+    /* background-image: url(../img/salmon.png); */
+    background-size: 15%;
+    background-repeat: repeat;
+    overflow: hidden;
+    height: 700px;
+    margin: 5rem;
+    z-index: -1;
+}
+
+#hero-container {
+    background-color: rgba(164, 14, 76, 40%);
+    width: 100%;
+    height: 100%;
+} 
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+
+#hero h1 {
+    font-size: 7rem;
+}
+
+#about {
     display: flex;
     justify-content: space-between;
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--space-cadet)
+    margin: 5rem;
 }
+
+#about img {
+    width: 35%;
+}
+
+#about p {
+    width: 60%;
+}
+
+#locations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+
+.locbox {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 300px;
+    background-color: #2C2C54;
+    margin: 2rem 1rem;
+}
+
+#hours {
+    text-align: center;
+    background-color: #2C2C54;
+    margin: 2rem;
+    padding: 2rem 1rem;
+}
+
+/* footer style  */
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+/* table style  */
 
 table {
     margin: 2rem auto;
@@ -42,6 +175,7 @@ th {
     border:solid 1px #2C2C54;
     background-color: #2C2C54;
     color:#F5D6BA;
+    text-align: center;
 }
 
 
@@ -54,6 +188,7 @@ table .label {
 table td {
     padding: 1rem;
     margin: 1rem;
+    text-align: center;
 }
 
 table tfoot {
@@ -68,17 +203,3 @@ table tr.x-axis:nth-of-type(odd) {
 table tr.x-axis:nth-of-type(even) {
     background-color: rgba(255, 14, 86, 20%);
 }
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Russo One', sans-serif;
-    color: var(--peach-puff)
-}
-
-p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: var(--dark-green);
-}
-
-
-
-/* need to create ruleset to specify font for sales data */

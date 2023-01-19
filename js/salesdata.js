@@ -2,25 +2,6 @@
 
 import { locationSalesReports, hours } from "./app.js";
 
-// function displaySalesData (targetElement, arrayLocation) {
-//     let target = document.getElementById(targetElement);
-//     let header = document.createElement('h2');
-//     header.innerHTML = locationSalesReports[arrayLocation][0];
-//     target.appendChild(header);
-//     let list = document.createElement('ul');
-//     target.appendChild(list);
-    
-
-//     for (let i = 0; i < 15; i++) {
-//         let data = document.createElement('li');
-//         data.innerHTML = locationSalesReports[arrayLocation][1][i];
-//         console.log(data.innerHTML);
-//         list.appendChild(data);
-//     }
-// }
-
-
-
 // renders cookies sold per hour for a given store location
 function displaySalesTableData (targetElementId, arrayLocation) {
     let target = document.getElementById(targetElementId);
