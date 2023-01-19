@@ -35,7 +35,7 @@ function displayHourlyTotals () {
         for (let j = 0; j < locationSalesReports.length; j++) {
             hourlyTotal += locationSalesReports[j][1][i];
         }
-        console.log(hourlyTotal);
+        // console.log(hourlyTotal);
         data = document.createElement('td');
         data.innerHTML = hourlyTotal;
         target.appendChild(data);
@@ -75,10 +75,17 @@ function createNewStoreData (event) {
 }
 
 function addStoreToTable (event) {
-    let tableEl = document.getElementById('tableBody');
-
     // prevents page from refreshing 
     event.preventDefault();
+    let tableEl = document.getElementById('tableBody');
+    // prevents adding of duplicate cities
+    for (let i = 0; i < locationSalesReports.length; i++) {
+        if (event.target.storeLocation.value.toUpperCase() == locationSalesReports[i][0].toUpperCase()) {
+            alert('City already exists');
+            newStoreEl.storeLocation.value = '';
+            return;
+        }
+    };
     // creates new Store object & generates relative information
     createNewStoreData(event);
     // creates new row in table body
@@ -98,7 +105,6 @@ function addStoreToTable (event) {
         data.innerText = salesArr[1][i];
         newTableRow.appendChild(data);
     }
-
     displayHourlyTotals();
     newStoreEl.reset();
 }
