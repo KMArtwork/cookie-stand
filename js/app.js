@@ -72,4 +72,4 @@ for (let i = 0; i < locations.length; i++) {
 compileSalesReports();
 // console.log(locationSalesReports);
 
-export { locationSalesReports, hours };
+export { locationSalesReports, hours, locations, Store };

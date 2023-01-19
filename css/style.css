@@ -28,12 +28,16 @@ h3 {
     font-size: 1.5rem;
 }
 
+h4 {
+    font-size: 1.25rem;
+}
+
 h5 {
-    font-size: 0.65
+    font-size: 1rem;
 }
 
 h6 {
-    font-size: 0.5rem;
+    font-size: 0.75rem;
 }
 
 
@@ -52,6 +56,12 @@ p {
     justify-content: space-between;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--space-cadet)
+}
+
+fieldset {
+    border: solid 1px red;
+    margin: 2rem;
+    padding: 2rem;
 }
 
 /* nav bar style */
@@ -168,20 +178,21 @@ table {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: large;
     color: var(--space-cadet);
+    border-spacing: 2px;
+    border-collapse: separate;
 }
 
 th {
     padding: 0.5rem 0.25rem;
-    border:solid 1px #2C2C54;
     background-color: #2C2C54;
     color:#F5D6BA;
     text-align: center;
+    vertical-align: middle;
 }
 
 
 table .label {
     padding: 0.5rem 0.25rem;
-    border:solid 1px #2C2C54;
     background-color: #2C2C54;
 }
 
@@ -202,4 +213,20 @@ table tr.x-axis:nth-of-type(odd) {
 
 table tr.x-axis:nth-of-type(even) {
     background-color: rgba(255, 14, 86, 20%);
+}
+
+/* add new store form style  */
+
+legend {
+    width: 20%;
+    text-align: center;
+}
+
+fieldset button {
+    background-color: #2C2C54;
+    border: solid 2px rgba(138, 130, 255, 0.8);
+}
+
+#form-info > div {
+    margin: 0.5rem;
 }
