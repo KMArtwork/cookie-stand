@@ -8,4 +8,7 @@ This is the infamous salmon cookies project where I will demonstrate my ability 
 
 ### Links and Resources
 
+Lab 08b Lighthouse Score
+![Lab08b Lighthouse Score](/img/lighthouse/lab08_lighthouse.JPG)
+
 ### Reflections and Comments
