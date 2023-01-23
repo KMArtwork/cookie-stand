@@ -1,0 +1,9 @@
+main {
+    margin-top: 200px;
+}
+
+.shop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
