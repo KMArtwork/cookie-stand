@@ -63,7 +63,7 @@ const populateStore = () => {
 let salmonCookieOG = new Item('Salmon Cookie Original', 1, 9999);
 let salmonCookiePB = new Item('Salmon Cookie Peanut Butter', 1, 9999);
 let salmonCookieCC = new Item('Salmon Cookie Chocolate Chip', 1, 9999);
-let salmonShirt = new Item('Salmon TShirt', 15.99, 4783, '../img/shirt.jpg');
+let salmonShirt = new Item('Salmon TShirt', 15.99, 4783, './img/shirt.jpg');
 let salmonHat = new Item('Salmon Cookie Fitted Hat', 18.99, 5779);
 let salmonSticker = new Item('Salmon Cookie Sticker', 2.99, 100);
 
