@@ -57,12 +57,7 @@ function createTableHeaders () {
 }
 
 function createNewStoreData (event) {
-    let newStore = new Store(
-            event.target.storeLocation.value,
-            event.target.minCustomers.value,
-            event.target.maxCustomers.value,
-            event.target.avgCookies.value
-        );
+    let newStore = new Store(event.target.storeLocation.value, event.target.minCustomers.value, event.target.maxCustomers.value, event.target.avgCookies.value);
         // generates store information
         newStore.generateCustomersPerHour();
         newStore.generateCookiesPerHour();
