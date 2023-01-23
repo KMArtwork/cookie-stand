@@ -1,0 +1,34 @@
+:root {
+    --salmon: #FAAA8D;
+    --off-white: #FEEFDD;
+    --dark-green: #313715;
+    --atomic-tangerine: #F49D6E;
+    --peach-puff: #F5D6BA;
+    --laurel-green: #ACC3A6;
+    --space-cadet: #2C2C54;
+    --amaranth-purple: #A40E4C;
+    --light-purple: rgba(155, 129, 216, 0.514);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form {
+    margin: 100px auto;
+    color: var(--space-cadet);
+}
+
+#confirmation {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+button {
+    width: 300px;
+    margin: 0 1rem;
+    padding: 1rem;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmon Cookies - Checkout</title>
+
+     <!-- fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+ 
+     <!-- stylesheets -->
+     <link href="./css/reset.css" rel="stylesheet" type="text/css">
+     <link href="./css/style.css" rel="stylesheet" type="text/css">
+     <link href="./css/payment.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <nav class="sticky">
+            <h1>Salmon Cookies</h1>
+            <a class="logo-nav" href="./index.html"><img src="./img/salmon.png" alt="A Salmon; The logo of Salmon Cookies"/></a>
+            <div id="navlinks">
+                <a href="./index.html">Home</a>
+                <a>About Us</a>
+                <a href="./onlineorder.html">Online Ordering</a>
+                <a href="./sales.html">Sales</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Payment Information</legend>
+                <div>
+                    <input type="text" id="firstName" name="firstName" />
+                    <label for="firstName">First Name</label>
+                </div>
+                <div>
+                    <input type="text" id="lastName" name="lastName" />
+                    <label for="lastName">Last Name</label>
+                </div>
+                <div>
+                    <input type="number" placeholder="Card Number" id="cardNumber" name="cardNumber" />
+                    <label for="cardNumber">Card Number</label>
+                </div>
+                <div>
+                    <input type="number" placeholder="MM / YY" id="cardExp" name="cardExp" />
+                    <label for="cardExp">Expiration</label>
+                </div>
+                <div>
+                    <input type="number" placeholder="CVV" id="cardCvv" name="cardCvv" />
+                    <label for="cardCvv">CVV</label>
+                </div>
+                <div>
+                    <input type="text" id="cardName" name="cardName" />
+                    <label for="cardName">Name on Card</label>
+                </div>
+                <div>
+                    <input type="text" placeholder="Street Address" id="address1" name="address1" />
+                    <label for="address1">Shipping Address</label>
+                </div>
+                <div>
+                    <input type="text" placeholder="Apt/Suite/Unit/etc." id="address2" name="address2" />
+                    <label for="address2">Address Etc</label>
+                </div>
+                <div>
+                    <input type="text" placeholder="City" id="city" name="city" />
+                    <label for="city">City</label>
+                </div>
+                <div>
+                    <input type="text" placeholder="State" id="state" name="state" />
+                    <label for="state">State</label>
+                </div>
+                <div>
+                    <input type="text" placeholder="Country" id="country" name="country" />
+                    <label for="country">Country</label>
+                </div>
+                <div>
+                    <input type="number" id="postal" name="postal" />
+                    <label for="postal">Postal Code</label>
+                </div>
+                <div>
+                    <input type="number" id="phone" name="phone" />
+                    <label for="phone">Phone Number</label>
+                </div>
+            </fieldset>
+            <div id="confirmation">
+                <a href="./sales.html"><button>Review Order</button></a>
+                <a href="./index.html"><button>Cancel</button></a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

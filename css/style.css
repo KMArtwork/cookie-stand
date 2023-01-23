@@ -9,6 +9,7 @@
     --laurel-green: #ACC3A6;
     --space-cadet: #2C2C54;
     --amaranth-purple: #A40E4C;
+    --light-purple: rgba(155, 129, 216, 0.514);
     background-color: var(--salmon);
 }
 
@@ -72,8 +73,9 @@ nav #navlinks a {
     color: var(--peach-puff);
     text-decoration: none;
     background-color: rgba(155, 129, 216, 0.514);
-    font-size: 1.15vw;
+    font-size: 1vw;
     padding: 1rem 1rem;
+    margin: 0 0.25rem;
     border-radius: 5px;
 }
 
@@ -107,6 +109,10 @@ nav h1 {
 }
 
 /* main style  */
+
+main {
+    min-height: 96.3vh;
+}
 
 #hero-bg {
     /* background-image: url(../img/salmon.png); */
@@ -314,4 +320,12 @@ fieldset input{
 fieldset button {
     background-color: #2C2C54;
     border: solid 2px rgba(138, 130, 255, 0.8);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+    background-color: var(--off-white);
+    z-index: 2;
 }
