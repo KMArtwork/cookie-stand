@@ -14,11 +14,11 @@ This project was created over the course of a week, following the prompts from C
 
 ### Links and Resources
 
-[Day 1 - Initial Project Prompt](https://github.com/codefellows/seattle-201d96/tree/main/class-06/lab)
-[Day 2](https://github.com/codefellows/seattle-201d96/tree/main/class-07/lab)
-[Day 3](https://github.com/codefellows/seattle-201d96/tree/main/class-08/lab-b)
-[Day 4](https://github.com/codefellows/seattle-201d96/tree/main/class-09/lab)
-[Day 5](https://github.com/codefellows/seattle-201d96/tree/main/class-10/lab-b)
+- [Day 1 - Initial Project Prompt](https://github.com/codefellows/seattle-201d96/tree/main/class-06/lab)
+- [Day 2](https://github.com/codefellows/seattle-201d96/tree/main/class-07/lab)
+- [Day 3](https://github.com/codefellows/seattle-201d96/tree/main/class-08/lab-b)
+- [Day 4](https://github.com/codefellows/seattle-201d96/tree/main/class-09/lab)
+- [Day 5](https://github.com/codefellows/seattle-201d96/tree/main/class-10/lab-b)
 
 
 Lab 08b Lighthouse Score
